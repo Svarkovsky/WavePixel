@@ -1,5 +1,5 @@
 
-# WavePixel 🔮✨
+# WavePixel ✨
 
 A hybrid application merging real-time OpenGL graphics with MIDI audio playback. Displays dynamic Shadertoy-inspired visuals (color-blended landscapes, sun, clouds, parallax) synchronized with MIDI music, enhanced by customizable audio effects.
 
@@ -57,8 +57,7 @@ cd WavePixel
 
 2. Compile the program:
 ```bash
-gcc -std=c17 -o wavepixel wavepixel.c \
--lSDL2 -lSDL2_mixer -lGLEW -lGL -lGLU -lm -Ofast
+gcc -std=c17 -o wavepixel wavepixel.c -lSDL2 -lSDL2_mixer -lGLEW -lGL -lGLU -lm -Ofast
 ```
 
 ## Usage
@@ -90,7 +89,11 @@ gcc -std=c17 -o wavepixel wavepixel.c \
 ## Notes
 
 - Without a `.sf2` file, audio will be disabled (visuals remain active).  
-- The program scans the directory for new `.mid` files every 5 seconds.  
+- The program scans the directory for new `.mid` files every 5 seconds.
+  
+## Author
+
+Ivan Svarkovsky  <https://github.com/Svarkovsky> 
 
 ## License
 
