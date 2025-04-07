@@ -57,7 +57,25 @@ cd WavePixel
 
 2. Compile the program:
 ```bash
+linux
 gcc -std=c17 -o wavepixel wavepixel.c -lSDL2 -lSDL2_mixer -lGLEW -lGL -lGLU -lm -Ofast
+
+windows
+x86_64-w64-mingw32-gcc -std=c17 -o wavepixel.exe wavepixel.c \
+    -Iinclude -Llib \
+    -lmingw32 -lglew32 -lopengl32 \
+    -lSDL2 -lSDL2_mixer -lm \
+    -Ofast \
+    -march=native -mtune=native \
+    -mfpmath=sse \
+    -falign-functions=16 -falign-loops=16 -fomit-frame-pointer -fno-ident -fno-asynchronous-unwind-tables -fvisibility=hidden \
+    -fno-plt \
+    -ftree-vectorize -fopt-info-vec \
+    -fipa-pta -fipa-icf -fipa-cp-clone -funroll-loops -floop-interchange -fmerge-all-constants \
+    -fvariable-expansion-in-unroller \
+    -fno-stack-protector \
+    -s -ffunction-sections -fdata-sections -Wl,--gc-sections -Wl,--strip-all \
+    -pipe -DNDEBUG -mwindows
 ```
 
 ## Usage
