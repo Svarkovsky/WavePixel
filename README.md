@@ -93,7 +93,7 @@ gcc -std=c17 -o wavepixel wavepixel.c -lSDL2 -lSDL2_mixer -lGLEW -lGL -lGLU -lm 
   
 ## Author
 
-Ivan Svarkovsky  <https://github.com/Svarkovsky> 
+Ivan Svarkovsky
 
 ## License
 
