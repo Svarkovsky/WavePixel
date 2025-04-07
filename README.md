@@ -1,9 +1,9 @@
 
-# WavePixel 
-
-## ❤️ Demoscene Heritage
+# WavePixel 🔮✨
 
 A hybrid application merging real-time OpenGL graphics with MIDI audio playback. Displays dynamic Shadertoy-inspired visuals (color-blended landscapes, sun, clouds, parallax) synchronized with MIDI music, enhanced by customizable audio effects.
+
+❤️ Demoscene Heritage
 
 ![Preview](wavepixel.gif)
 
